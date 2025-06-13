@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap);
+
+@import "tailwindcss";
+
+@layer base {
+    html {
+        font-family: "Poppins", "sans-serif";
+    }
+
+    body {
+        background-color: #fdfeff;
+        overflow-x: hidden;
+    }
+}
+
+@layer components {
+  .input-box {
+    @apply w-full text-sm bg-transparent border-[1.5px] border-gray-300 px-5 py-3 rounded mb-4 outline-none;
+  }
+  .btn-primary {
+    @apply w-full text-sm text-white p-2 rounded my-1;
+  }
+  .icon-btn {
+    @apply text-xl text-slate-300 cursor-pointer hover:text-blue-300;
+  }
+  .input-label {
+    @apply text-xs text-slate-400;
+  }
+}
+
+@layer utilities {
+  .text-primary {
+    color: #2B85FF;
+  }
+  .bg-primary {
+    background-color: #2B85FF;
+  }
+  .btn-primary {
+    background-color: #2B85FF;
+  }
+  .text-secondary {
+    color: #EF863E;
+  }
+}
